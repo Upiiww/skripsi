@@ -11,6 +11,7 @@ class NpkDataSeeder extends Seeder
     {
         DB::table('npk_data')->insert([
             [
+                'device_id'=>1,
                 'nitrogen' => 150,
                 'phosphorus' => 100,
                 'potassium' => 80,
@@ -18,6 +19,7 @@ class NpkDataSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
+                'device_id'=>1,
                 'nitrogen' => 170,
                 'phosphorus' => 90,
                 'potassium' => 85,

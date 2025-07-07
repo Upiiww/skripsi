@@ -11,16 +11,18 @@ class SoilDataSeeder extends Seeder
     {
         DB::table('soil_data')->insert([
             [
-                'moisture' => 45,
-                'temperature' => 29,
-                'ph' => 6.5,
+                'device_id'=>1,
+                'soil_moisture' => 45,
+                'soil_temperature' => 29,
+                'soil_ph' => 6.5,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'moisture' => 50,
-                'temperature' => 28,
-                'ph' => 6.8,
+                'device_id'=>1,
+                'soil_moisture' => 50,
+                'soil_temperature' => 28,
+                'soil_ph' => 6.8,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
