@@ -45,6 +45,10 @@ class NpkDataResource extends Resource
                 TextColumn::make('phosphorus'),
                 TextColumn::make('potassium'),
                 TextColumn::make('created_at')->dateTime()->sortable(),
+                TextColumn::make('n_pump_status')->label('N Pump')->badge(),
+                TextColumn::make('p_pump_status')->label('P Pump')->badge(),
+                TextColumn::make('k_pump_status')->label('K Pump')->badge(),
+
             ])
             ->filters([
                 //

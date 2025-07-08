@@ -12,7 +12,11 @@ return new class extends Migration {
             $table->unsignedBigInteger('device_id');
             $table->decimal('nitrogen', 8, 2);
             $table->decimal('phosphorus', 8, 2);
-            $table->decimal('potassium', 8, 2);    
+            $table->decimal('potassium', 8, 2);
+            $table->string('n_pump_status')->nullable();
+$table->string('p_pump_status')->nullable();
+$table->string('k_pump_status')->nullable();
+    
             $table->timestamps();
         });
     }
